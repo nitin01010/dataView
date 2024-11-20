@@ -298,15 +298,24 @@ const Dashboard = () => {
   };
 
   return (
+
     <div className="bg-slate-900 h-screen  p-5">
+     <button className=" bg-white p-3" onClick={() => logout()}>
+  Log Out
+</button>
       <div className="h-[100px] flex items-center justify-center">
         <h1 className="text-white font-bold text-3xl text-center">
           Dashboard Visualization
         </h1>
       </div>
-      <button onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
-      Log Out
-    </button>
+   
+      <button
+  onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}
+  className="bg-red-600 text-white font-semibold py-2 px-4 rounded-lg shadow-lg hover:bg-red-700 transition duration-200 ease-in-out"
+>
+  Log Out
+</button>
+ 
       <div className="flex justify-center gap-5 my-5">
         <select
           className="px-4 py-2 rounded-md border-2 border-slate-700 text-white bg-slate-800"
