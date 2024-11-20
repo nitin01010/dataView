@@ -300,9 +300,7 @@ const Dashboard = () => {
   return (
 
     <div className="bg-slate-900 h-screen  p-5">
-     <button className=" bg-white p-3" onClick={() => logout()}>
-  Log Out
-</button>
+     
       <div className="h-[100px] flex items-center justify-center">
         <h1 className="text-white font-bold text-3xl text-center">
           Dashboard Visualization
